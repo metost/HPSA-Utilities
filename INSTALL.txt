@@ -1,0 +1,38 @@
+
+Requirements:
+
+hpsa-*.pl scripts require modules:
+
+ - Crypt::SSLeay
+ - IO::Socket::SSL
+ - Net::SSLeay
+ - HTML::Parser
+ - MIME::Base64
+ - URI
+ - libwww-perl
+ - SOAP::Lite
+ - SOAP::WSDL
+
+also all hpsa-*.pl needs .pwa.ini file
+configured. The is an pwa-ini-example.txt
+usable as the template for that.
+
+
+Versions well tested on RHEL5:
+
+ - Crypt::SSLeay    version 0.51
+ - IO::Socket::SSL  version 0.95
+ - Net::SSLeay      version 1.25
+ - HTML::Parser     version 3.35
+ - MIME::Base64     version 3.01
+ - URI              version 1.30
+ - libwww-perl      version 5.76
+ - SOAP::Lite       version 0.65_6
+ - SOAP::WSDL       version 2.00.99_3
+
+
+All twist-*.py require 10.20 Python API (pytwist package)
+
+
+# --- end ---
+

@@ -1,0 +1,40 @@
+
+# Update all these data
+# and save this file as .pwa.ini within
+# the folder where PWA.pm resides.
+#
+[ADMIN]
+  DESC = Migrated Windows servers
+  LOGIN = myadministrator
+  METHOD = wmi
+
+[HPSA]
+  DESC = Model Office LAB
+  HPSA_GW_ADDR = 123.34.56.61:3001,123.34.56.63:3001
+  MESH = hpsa-wsp1.domain.com
+  MESH1 = hpsa-wsp1.domain.com
+  MESH2 = hpsa-wsp2.domain.com
+  MESH3 = hpsa-wsp3.domain.com
+  MESH4 = hpsa-wsp4.domain.com
+  MESH5 = hpsa-wsp5.domain.com
+  MESH6 = hpsa-wsp6.domain.com
+  MESH7 = hpsa-wsp7.domain.com
+  MESH8 = hpsa-wsp8.domain.com
+  MESH9 = hpsa-wsp9.domain.com
+  METHOD = hpsa
+  TRY = mesh,mesh5,mesh1,mesh2,mesh3,mesh4,mesh6,mesh7,mesh8,mesh9
+
+[ROOT]
+  DESC = Migrated Linux server
+  LOGIN = root
+  METHOD = ssh
+
+[SUDO]
+  DESC = privileged user on hpsatool server
+  LOGIN = root
+  METHOD = sudo
+
+[USER]
+  DESC = HP-reporter & Windows Jump servers
+  METHOD = wmi
+
